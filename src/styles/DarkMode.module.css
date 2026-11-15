@@ -1,3 +1,116 @@
 /* TODO (optional): Define styles for dark mode */
+.app {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
 
+.light {
+  background-color: #f4f6f8;
+  color: #1a202c;
+}
+
+.dark {
+  background-color: #12161f;
+  color: #f1f5f9;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.85rem;
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  opacity: 0.85;
+}
 /* TODO (optional): Ensure text and background colors adjust for dark mode */
+
+.toggleButton {
+  padding: 0.55rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: #1e293b;
+  color: #ffffff;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.dark .toggleButton {
+  background-color: #f8fafc;
+  color: #0f172a;
+  border-color: #475569;
+}
+
+.toggleButton:hover {
+  opacity: 0.9;
+}
+
+.filterBar {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-weight: 500;
+}
+
+.select {
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+  color: #1a202c;
+}
+
+.dark .select {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  border-color: #475569;
+}
+
+.cartSection {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.dark .cartSection {
+  border-color: #334155;
+  background-color: #1e293b;
+}
+
+.cartSection h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.cartList {
+  margin: 0;
+  padding-left: 1.25rem;
+  line-height: 1.8;
+}
+
+.emptyCart {
+  margin: 0;
+  opacity: 0.75;
+}
